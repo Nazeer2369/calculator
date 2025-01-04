@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calci.css">
+  <script src="calci.js"></script>
+</head>
+<body>
+    <div class="container">
+    <table >
+        <caption><H1 style="color: white;"> Simple Calculator</H1></caption>
+        <tr>
+        
+            <td   colspan="4"><input id="ip" type="text" class="in"></td>
+        </tr>
+        <tr>
+           <td><button onclick="sqr(parseFloat(document.getElementById('ip').value))">x<SUp>2</SUp></button></td>
+           <td><button onclick="sqrt(parseFloat(document.getElementById('ip').value))">sqrt</button></td>
+           <td><button onclick="back()">back</button></td>
+           <td><button onclick="ac()">AC</button></td>
+        </tr>
+        <tr>
+            <td > <button onclick="show('7')">7</button></td>
+            <td><button onclick="show('8')">8</button></td>
+            <td><button onclick="show('9')">9</button></td>
+            <td><button onclick="show('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="show('4')">4</button></td>
+            <td><button onclick="show('5')">5</button></td>
+            <td><button onclick="show('6')">6</button></td>
+            <td><button onclick="show('x')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="show('1')">1</button></td>
+            <td><button onclick="show('2')">2</button></td>
+            <td><button onclick="show('3')">3</button></td>
+            <td>
+                <button onclick="show('+')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td ><button onclick="show('.')">.</button></td>
+            <td><button onclick="show('0')">0</button></td>
+            <td><button onclick="show('-')">-</button></td>
+            <td><button onclick="cal('=')">=</button></td>
+        </tr>
+       
+    </table>
+    </div>
+    
+</body>
+</html>
